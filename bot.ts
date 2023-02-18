@@ -101,9 +101,8 @@ bot
     await ctx.reply(ctx.t("start-msg", { user: ctx.from.first_name }), {
       parse_mode: "HTML",
       reply_markup: new InlineKeyboard()
-        .text(ctx.t("usage-help"), "helper").row()
-        .text("Change Language", "setLang").row()
-        .url(ctx.t("updates"), "https://t.me/BotzHub"),
+        .url(ctx.t("𝗡𝗲𝘄 𝗖𝗶𝗻𝗲𝗺𝗮𝗦 ~ 𝗨𝗻𝗹𝗶𝗺𝗶𝘁𝗲𝗱🎭™"), "https://t.me/+nQjZWOoEVpMxOWE1").row
+        .url(ctx.t("ᴄɪɴᴇᴍᴀ ʀᴏᴄᴋᴇʀs🎭™"), "https://t.me/+cm1FYByZ5SgzYjc1"),
       disable_web_page_preview: true,
     });
     await addUser(ctx.from.id);
