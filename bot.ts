@@ -304,6 +304,8 @@ bot.on("chat_join_request", async (ctx) => {
 
   // try to send a message
   try {
+     reply_markup: new InlineKeyboard()
+      .url(ctx.t("text"), "https://t.me/+nQjZWOoEVpMxOWE1")
     await bot.api.sendMessage(
       update.from.id,
       welcome,
